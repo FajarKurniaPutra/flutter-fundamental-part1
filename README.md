@@ -25,3 +25,12 @@ Praktikum 5 adalah penerapan berbagai widget UI bawaan Flutter untuk Material De
 ![Screenshot hello_world](images/Prak5_4_1.png)
 ![Screenshot hello_world](images/Prak5_4_2.png)
 ![Screenshot hello_world](images/Prak5_4_3.png)
+
+Praktikum Codelabs: Your first Flutter app
+Secara garis besar, Codelab ini memandu membuat "Namer App", sebuah aplikasi yang bisa menghasilkan kombinasi dua kata acak. Di Langkah 1-4, diarahkan untuk mengatur project awal, menginstal package eksternal (english_words untuk kata acaknya dan provider untuk mengelola datanya), serta membuat tombol "Next" sederhana yang bisa mengganti kata di layar saat diklik.
+
+Pada Langkah 5-8, fokusnya berpindah ke perbaikan tampilan dan fungsionalitas (UI/UX). Disini dimungkinkan merapikan teks menggunakan widget Card dengan pewarnaan dari sistem Theme, lalu menambahkan fitur "Like" agar kata yang bagus bisa disimpan ke daftar favorit. Di tahap akhir, aplikasinya dibuat responsif dengan menambahkan NavigationRail (menu navigasi samping/bawah) untuk memudahkan pengguna berpindah antara halaman utama (penghasil kata) dan halaman daftar kata favorit.
+![Screenshot hello_world](images/Your first Flutter app 1.png)
+![Screenshot hello_world](images/Your first Flutter app 2.png)
+![Screenshot hello_world](images/Your first Flutter app 3.png)
+![Screenshot hello_world](images/Your first Flutter app 4.png)

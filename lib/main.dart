@@ -44,25 +44,39 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-            const SizedBox(height: 20),
-            
-            ElevatedButton(
-              child: const Text('Show alert'),
-              onPressed: () {
-                showAlertDialog(context);
-              },
-            ),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text(
+                'You have pushed the button this many times:',
+              ),
+              Text(
+                '$_counter',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+              const SizedBox(height: 20),
+              
+              ElevatedButton(
+                child: const Text('Show alert'),
+                onPressed: () {
+                  showAlertDialog(context);
+                },
+              ),
+              const SizedBox(height: 40), 
+              
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0), 
+                child: TextField(
+                  obscureText: false,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Nama',
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
@@ -84,13 +98,13 @@ showAlertDialog(BuildContext context) {
   Widget okButton = TextButton(
     child: const Text("OK"),
     onPressed: () {
-      Navigator.pop(context); 
+      Navigator.pop(context);
     },
   );
 
   AlertDialog alert = AlertDialog(
-    title: const Text("Fajar Kurnia Putra"),
-    content: const Text("SIB 2F - 244107060074"),
+    title: const Text("My title"),
+    content: const Text("This is my message."),
     actions: [
       okButton,
     ],
